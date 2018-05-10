@@ -48,4 +48,20 @@ $(function() {
         location.reload();
       });
 
+      $("#remove").on("click", function(event) {
+        
+        event.preventDefault();
+
+        $.ajax("/api/burgers/", {
+          type: "DELETE",
+          
+        }).then(
+          function() {
+            console.log("removed all burgers");
+            // Reload the page to get the updated list
+          }
+        );
+        location.reload();
+      });
+
 })

@@ -40,9 +40,13 @@ router.put("/api/burgers/:id", function(req, res) {
       res.status(200).end();
     }
   });
-
 });
 
+router.delete("/api/burgers", function(req, res) {
+  burger.truncate(function(result) {
+    
+  });
+});
 
 // Export routes for server.js to use.
 module.exports = router;

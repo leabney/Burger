@@ -76,6 +76,17 @@ orm = {
         throw error;
       }
     })
+  },
+
+  //Truncate Table//
+  truncate: function(table){
+    var queryString = "TRUNCATE " + table
+
+    connection.query(queryString,function(error,result){
+      if(error){
+        throw error;
+      }
+    })
   }
 }
 

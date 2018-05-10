@@ -15,6 +15,11 @@ var burger = {
         orm.updateOne("burgers",objColVals,condition, function(result){
             callback(result);
         })
+    },
+    truncate: function(table,callback){
+        orm.truncate("burgers",function(result){
+            callback(result);
+        })
     }
 }
 
