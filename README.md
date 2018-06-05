@@ -1,7 +1,7 @@
 # Burger
 This project required MySQL, JavaScript and Node.js to build a simple webpage to display results from a database and let users interact with the data.
 
-## Deployed on Heroku
+## View on Heroku
 https://radiant-woodland-20536.herokuapp.com/
 
 ## Functionality
